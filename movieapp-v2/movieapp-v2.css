@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffd6e0;
+  background: linear-gradient(135deg, #ffd6e0, #ffb3c6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  padding: 20px;
+  color: #4a0020;
+}
+
+h2 {
+  color: #4a0020;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+h3 {
+  color: #4a0020 !important;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid #f48fb1;
+  border-radius: 5px;
+  background: #fff0f5;
+  color: #4a0020;
+}
+
+label {
+  color: #4a0020;
+  font-weight: bold;
+}
+
+.table {
+  background: #f48fb1;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+#movie-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  overflow: hidden;
+  word-wrap: break-word;
+  background: #fff0f5;
+  color: #4a0020;
+}
+
+#movie-list > section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #f8bbd0;
+  padding: 10px;
+}
+
+.btn {
+  background: #e91e8c;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #c2185b;
+}
+
+.btn-cancel {
+  background: #aaa;
+  margin-left: 10px;
+}
+
+.btn-cancel:hover {
+  background: #888;
+}
+
+.btn-edit {
+  background: #9c27b0;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.btn-edit:hover {
+  background: #2e1b9a;
+}
+
+.btn-delete {
+  background: #e53935;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete:hover {
+  background: #b71c1c;
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-style: italic;
+}

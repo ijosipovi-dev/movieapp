@@ -1,0 +1,80 @@
+<html lang="hr">
+<meta charset="UTF-8" />
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie List App</title>
+    <link rel="stylesheet" href="movieapp-v2.css" />
+  </head>
+  <body>
+
+    <section class="container">
+      <h2> Dodaj novi film</h2>
+      <form id="movie-form">
+        <div>
+          <label for="title">Naslov filma</label>
+          <input type="text" id="title" placeholder="npr. Inception" />
+        </div>
+        <div>
+          <label for="genre"> Žanr</label>
+          <input type="text" id="genre" placeholder="npr. Sci-Fi" />
+        </div>
+        <div>
+          <label for="year">Godina</label>
+          <input type="number" id="year" placeholder="npr. 2010" />
+        </div>
+        <div>
+          <label for="planned_date">Planirani datum gledanja</label>
+          <input type="date" id="planned_date" />
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <input type="text" id="status" placeholder="npr. Pogledano / Za pogledati" />
+        </div>
+        <button type="submit" class="btn">Dodaj film</button>
+      </form>
+
+      <section class="table">
+        <section class="table-section">
+          <div>Naslov</div>
+          <div>Žanr</div>
+          <div>Godina</div>
+          <div>Planirani datum</div>
+          <div>Status</div>
+          <div>Akcije</div>
+        </section>
+        <section id="movie-list"></section>
+      </section>
+    </section>
+
+    <section class="container" id="edit-section" style="display:none;">
+      <h3> Uredi film</h3>
+      <form id="edit-form">
+        <div>
+          <label for="edit-title">Naslov filma</label>
+          <input type="text" id="edit-title" />
+        </div>
+        <div>
+          <label for="edit-genre">Žanr</label>
+          <input type="text" id="edit-genre" />
+        </div>
+        <div>
+          <label for="edit-year">Godina</label>
+          <input type="number" id="edit-year" />
+        </div>
+        <div>
+          <label for="edit-planned-date">Planirani datum gledanja</label>
+          <input type="date" id="edit-planned-date" />
+        </div>
+        <div>
+          <label for="edit-status">Status</label>
+          <input type="text" id="edit-status" />
+        </div>
+        <button type="submit" class="btn">Spremi izmjene</button>
+        <button type="button" class="btn btn-cancel" id="cancel-edit">Odustani</button>
+      </form>
+    </section>
+
+    <script src="movieapp-v2.js"></script>
+  </body>
+</html>
