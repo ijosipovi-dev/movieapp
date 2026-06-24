@@ -9,8 +9,8 @@ Kod za Docker:
 ## Pokretanje s Dockerom
 
 ```
-docker build -t movieapp .
-docker run -p 8080:80 movieapp
+docker build -t movieapp-v2 .
+docker run -p 8080:80 movieapp-v2
 ```
 
 Browser na http://localhost:8080
